@@ -1,0 +1,38 @@
+.item_quangcao{
+    background: url(../../../../../assets/image/img_quangcao/backapp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    .quangcao_content{
+        position: absolute;
+        padding-top: 200px;
+        padding-left: 200px;
+        justify-content: center;
+        text-align: center;
+        .app_button{
+            padding: 15px 30px;
+        }
+        a{
+            color: white;
+            border-bottom: solid 1px white;
+            text-decoration: none;
+        }
+    }
+    .app_button{
+        box-shadow: none;
+    }
+}
+@media screen and (max-width: 768px){
+    .item_quangcao{
+        .quangcao_content{
+            position: absolute;
+            padding-top: 200px;
+            padding-left: 44px;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}

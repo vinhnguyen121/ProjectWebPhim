@@ -1,0 +1,22 @@
+<div class="ListPhim_content">
+  <div class="col-12 text-center ListPhim">
+    <button class="btn" [ngClass]="{'btn-outline-success': dangchieuStatus}" (click)="HienPhimDangChieu()">Phim Dang
+      Chieu</button>
+    <button class="btn" [ngClass]="{'btn-outline-success': !dangchieuStatus}" (click)="HienPhimSapChieu()">Phim Sap
+      Chieu</button>
+  </div>
+
+  <div class="MucPhim container row mt-5" *ngIf="dangchieuStatus; else phimSapchieu">
+    <div class="col-md-12 PhimDangChieu">
+      <app-dangchieu></app-dangchieu>
+    </div>
+    <!-- <ng-template #phimSapchieu>
+      <div class="col-md-12 PhimSapChieu">
+        <app-sapchieu></app-sapchieu>
+      </div>
+    </ng-template> -->
+  </div>
+</div>
+
+
+
