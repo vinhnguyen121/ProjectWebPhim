@@ -24,11 +24,6 @@
             <i class="fa fa-film mr-2"></i> Quản Lý Phim
           </a>
         </li>
-        <li>
-          <a class="btn" (click)="ChonLoaiQL('QLlichchieu')" style="color: white">
-            <i class="fa fa-calendar mr-2"></i> Quản Lý Lịch Chiếu
-          </a>
-        </li>
       </ul>
     </div>
 
@@ -39,36 +34,16 @@
       <app-header-admin></app-header-admin>
     </div>
     <div class="QuanLy_Info" [ngSwitch]="QuanLyStatus">
-      <div class="QuanLy_content" *ngSwitchCase="'QLnguoidung'">
+      <div class="QuanLy_content w-100" *ngSwitchCase="'QLnguoidung'">
         <app-quanlynguoidung></app-quanlynguoidung>
       </div>
       <div class="QuanLy_content" *ngSwitchCase="'QLphim'">
         <app-quanlyphim></app-quanlyphim>
       </div>
-      <div class="QuanLy_content" *ngSwitchCase="'QLlichchieu'">
-        <app-quanlylichchieu></app-quanlylichchieu>
-      </div>
     </div>
   </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- <app-login-admin></app-login-admin> -->
 
 <router-outlet></router-outlet>

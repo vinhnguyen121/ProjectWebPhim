@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./layout-admin.component.scss']
 })
 export class LayoutAdminComponent implements OnInit {
-  QuanLyStatus = 'QLphim';
+  QuanLyStatus = 'QLnguoidung';
   constructor() { }
   ChonLoaiQL(val) {
     this.QuanLyStatus = val;

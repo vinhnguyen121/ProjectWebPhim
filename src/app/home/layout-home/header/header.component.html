@@ -9,7 +9,7 @@
 
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
   <!-- Links -->
-  <ul class="navbar-nav mx-auto">
+  <ul class="navbar-nav m-auto">
     <li class="nav-item">
       <a class="nav-link" href="#">Lịch Chiếu</a>
     </li>
@@ -28,32 +28,20 @@
   <ul class="navbar-nav DangNhap ml-auto row" style="align-items: center">
     <li class="nav-item mr-5">
       <button class="btn" style="padding: 0 15px"><i class="fa fa-user-circle pr-2"></i>Đăng Nhập</button>
-    </li>  
-    <li class="dropdown">
-      <a class="nav-Link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        <i class="fa fa-map-marker pr-2"></i> Hồ Chí Minh
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Hồ Chí Minh</a>
-        <a class="dropdown-item" href="#">Hà Nội</a>
-        <a class="dropdown-item" href="#">Đà Nẵng</a>
-        <a class="dropdown-item" href="#">Nha Trang</a>
-        <a class="dropdown-item" href="#">Hải Phòng</a>
-        <a class="dropdown-item" href="#">Biên Hòa</a>
-        <a class="dropdown-item" href="#">Bình Dương</a>
-        <a class="dropdown-item" href="#">Phan Thiết</a>
-      </div>
-      <!-- <select class="dropdown-menu" size="5">
-        <option value="HCM"><a class="dropdown-item" href="#">Hồ Chí Minh</a></option>
-        <option value="HN"><a class="dropdown-item" href="#">Hà Nội</a></option>
-        <option value="DN"><a class="dropdown-item" href="#">Đà Nẵng</a></option>
-        <option value="NT"><a class="dropdown-item" href="#">Nha Trang</a></option>
-        <option value="HP"><a class="dropdown-item" href="#">Hải Phòng</a></option>
-        <option value="BH"><a class="dropdown-item" href="#">Biên Hòa</a></option>
-        <option value="BD"><a class="dropdown-item" href="#">Bình Dương</a></option>
-        <option value="PT"><a class="dropdown-item" href="#">Phan Thiết</a></option>
-      </select> -->
     </li>
+    <li>
+      <select name="" id="" #diaDiem (change)="ChonDiaDiem(diaDiem.value)" size="1" class="pr-2 mr-5">
+        <option class="dropdown-item" value="HCM">Hồ Chí Minh</option>
+        <option value="HN">Hà Nội</option>
+        <option value="DN">Đà Nẵng</option>
+        <option value="NT">Nha Trang</option>
+        <option value="HP">Hải Phòng</option>
+        <option value="BH">Biên Hòa</option>
+        <option value="BD">Bình Dương</option>
+        <option value="PT">Phan Thiết</option>
+      </select>
+    </li>
+    
   </ul>
 </div>
 </nav>

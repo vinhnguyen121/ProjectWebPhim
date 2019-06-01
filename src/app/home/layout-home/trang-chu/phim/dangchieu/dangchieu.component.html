@@ -1,8 +1,17 @@
-<div class="row PhimDangChieu_content owl-carousel owl-theme m-0">
+<div class="row PhimDangChieu_content m-0">
+  <owl-carousel 
+    option="items: 3, dots: false, navigation: false"
+    carouselClasses ="owl-theme, row, sliding"
+  >
     <div ngbSlide class="col-md-3 item card m-0" style="max-width: none;" *ngFor="let Phim of DanhSachPhimDangChieu | slice:0:8">
-        <app-item-phim [Itemphim]=Phim></app-item-phim>
+      <app-item-phim [Itemphim]=Phim></app-item-phim>
     </div>
-  </div>
+  </owl-carousel>
+
+</div>
+
+
+
 <!-- <ngb-carousel>
     <ng-template ngbSlide>
       <img src="images[0]" alt="Random first slide">

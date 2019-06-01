@@ -18,7 +18,7 @@ import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap'
     HttpClientModule,
     NgbModule,
     NgbPaginationModule,
-    NgbAlertModule,
+    NgbAlertModule
   ],
   providers: [],
   bootstrap: [AppComponent]

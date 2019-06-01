@@ -28,7 +28,7 @@ import { CinestarComponent } from './layout-home/trang-chu/cumrap/list-rap-phim/
 import { DangKyComponent } from './layout-home/trang-chu/dang-ky/dang-ky.component';
 import { DangNhapComponent } from './layout-home/trang-chu/dang-nhap/dang-nhap.component';
 import {FormsModule} from '@angular/forms';
-
+import { OwlModule } from 'ngx-owl-carousel';
 
 @NgModule({
   // tslint:disable-next-line: max-line-length
@@ -62,7 +62,8 @@ import {FormsModule} from '@angular/forms';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    FormsModule
+    FormsModule,
+    OwlModule
   ],
   exports: [
     LayoutHomeComponent,

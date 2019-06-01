@@ -6,24 +6,28 @@ import { QuanlyphimComponent } from './layout-admin/quanlyphim/quanlyphim.compon
 import { QuanlylichchieuComponent } from './layout-admin/quanlylichchieu/quanlylichchieu.component';
 import { AdminRoutingModule } from './admin-routing.module';
 import { HeaderAdminComponent } from './layout-admin/header-admin/header-admin.component';
-
+import { LoginAdminComponent } from './layout-admin/login-admin/login-admin.component';
+import {FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     LayoutAdminComponent,
     QuanlynguoidungComponent,
     QuanlyphimComponent,
     QuanlylichchieuComponent,
-    HeaderAdminComponent],
+    HeaderAdminComponent,
+    LoginAdminComponent],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    FormsModule
   ],
   exports: [
     LayoutAdminComponent,
     QuanlynguoidungComponent,
     QuanlyphimComponent,
     QuanlylichchieuComponent,
-    HeaderAdminComponent
+    HeaderAdminComponent,
+    LoginAdminComponent
   ]
 })
 export class AdminModule { }
